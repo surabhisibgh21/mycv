@@ -5,68 +5,105 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Surabhi Singh — CV</title>
 
-  <!-- Google fonts -->
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Merriweather:wght@700;900&display=swap" rel="stylesheet">
 
-  <!-- CSS file -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <article class="card">
-    <!-- Change this src if your image path/filename differs -->
-    <div class="avatar-wrap" aria-hidden="true">
-      <img class="avatar" src="https://raw.githubusercontent.com/surabhisibgh21/mycv/main/surabhicvphoto.jpg" alt="Surabhi Singh">
-    </div>
+  <div class="resume">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="photo-wrap">
+        <img src="https://raw.githubusercontent.com/surabhisibgh21/mycv/main/surabhicvphoto.jpg" alt="Surabhi Singh" class="photo">
+      </div>
 
-    <header>
-      <h1>Surabhi Singh</h1>
-      <h3>Student</h3>
-    </header>
+      <h1 class="name">Surabhi<br><span class="surname">Singh</span></h1>
+      <p class="role">Student</p>
 
-    <div class="divider" aria-hidden="true"></div>
+      <div class="contact">
+        <h4>Contact</h4>
+        <p><a href="mailto:rtr.surabhisingh@gmail.com">rtr.surabhisingh@gmail.com</a></p>
+      </div>
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a passionate and highly motivated person, with excellent communication skills and a natural ability to collaborate. I am a team player who can smoothly work in fast-paced environments. Every team I am a part of receives my energy and confidence. I have a passion for technology and programming and enjoy continuous learning and growth. I bring responsibility, curiosity, and a proactive attitude.</p>
-    </section>
+      <div class="skills">
+        <h4>Key skills</h4>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>MS Office (Word, Excel, PowerPoint)</li>
-        <li>Google Suite (Docs, Sheets, Slides, Forms)</li>
-        <li>Basic HTML &amp; CSS</li>
-        <li>Data Analysis (Excel, Python, basic SQL)</li>
-        <li>Canva / Graphic Design</li>
-        <li>Social Media Management</li>
-        <li>Programming (Python, C++)</li>
-        <li>Content Writing</li>
-      </ul>
-    </section>
+        <div class="skill">
+          <div class="skill-label">HTML &amp; CSS</div>
+          <div class="bar"><span style="width:85%"></span></div>
+        </div>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>BA Computer Applications</strong> (Major) — Mathematics (Minor)<br>
-      Maitreyi College, University of Delhi</p>
-    </section>
+        <div class="skill">
+          <div class="skill-label">Python</div>
+          <div class="bar"><span style="width:70%"></span></div>
+        </div>
 
-    <section id="experience">
-      <h2>Experience</h2>
-      <h3 class="job-title">Content Writer Intern — Sun Overseas</h3>
-      <p>Created engaging, SEO-optimized content across various niches; contributed to blog posts, social captions and promotional materials; delivered research-backed pieces under tight deadlines.</p>
-    </section>
+        <div class="skill">
+          <div class="skill-label">Excel / Data</div>
+          <div class="bar"><span style="width:78%"></span></div>
+        </div>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:rtr.surabhisingh@gmail.com">rtr.surabhisingh@gmail.com</a></p>
-    </section>
+        <div class="skill">
+          <div class="skill-label">Canva / Design</div>
+          <div class="bar"><span style="width:65%"></span></div>
+        </div>
 
-    <div class="footer-space">Simple responsive CV • Designed with CSS</div>
-  </article>
+        <div class="skill">
+          <div class="skill-label">Content Writing</div>
+          <div class="bar"><span style="width:72%"></span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-footer">
+        <small>Simple responsive CV • Designed with CSS</small>
+      </div>
+    </aside>
+
+    <!-- RIGHT CONTENT -->
+    <main class="content">
+      <header class="header-top">
+        <h2 class="title-large">Surabhi Singh</h2>
+        <p class="subtitle-muted">Student — BA Computer Applications (Maitreyi College)</p>
+      </header>
+
+      <section>
+        <h3>About</h3>
+        <p>I am a passionate and highly motivated person with excellent communication skills and a natural ability to collaborate. I enjoy technology and programming and pursue continuous learning to grow in the IT sector. I bring responsibility, curiosity, and a proactive attitude to every team.</p>
+      </section>
+
+      <section>
+        <h3>Experience</h3>
+        <div class="job">
+          <h4>Content Writer Intern — Sun Overseas</h4>
+          <p>Created engaging, SEO-optimized content across various niches; contributed to blog posts, social captions and promotional material; delivered research-backed pieces under tight deadlines.</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Education</h3>
+        <p><strong>BA Computer Applications</strong> (Major) — Mathematics (Minor)<br>Maitreyi College, University of Delhi</p>
+      </section>
+
+      <section>
+        <h3>Other skills</h3>
+        <ul class="plain-list">
+          <li>MS Office (Word, Excel, PowerPoint)</li>
+          <li>Google Suite (Docs, Sheets, Slides, Forms)</li>
+          <li>Basic SQL, Data Analysis</li>
+          <li>Social media management</li>
+        </ul>
+      </section>
+
+      <footer class="content-footer">
+        <p>Want changes? I can change the accent color, adjust skill widths, or add download/print buttons.</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
 
-        
 
+      
 
 
