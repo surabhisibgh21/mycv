@@ -1,36 +1,92 @@
-body {
-    font-family:'Georgia', 
-sans-serif;
-    background: #f3e9dd;
-    margin: 0;
-    padding: 0;
+:root{
+  --bg: #fbf6f2;       /* page background */
+  --card: #ffffff;     /* main card */
+  --heading: #3a2f2a;  /* headings */
+  --muted: #555555;    /* body text */
+  --accent: #e9ded6;   /* photo background */
 }
 
-
-.container {
-    max-width: 700px;
-    margin: auto;
-    background: ffffff;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+/* reset & base */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:var(--bg);
+  color:var(--muted);
+  -webkit-font-smoothing:antialiased;
 }
 
-h1, h2 {
-    color: #3a2f2a;
+/* center page */
+.container{
+  max-width:860px;
+  margin:30px auto;
+  background:var(--card);
+  border-radius:12px;
+  box-shadow:0 10px 24px rgba(0,0,0,0.08);
+  overflow:hidden;
+  padding:22px;
 }
 
-ul {
-    padding-left: 20px;
+/* header */
+.card-header{
+  display:flex;
+  gap:18px;
+  align-items:center;
+  padding-bottom:12px;
+  border-bottom:1px solid rgba(0,0,0,0.06);
+  margin-bottom:14px;
 }
 
-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    object-fit: cover;
-    display: block;
-    margin: 0 auto 20px auto;
-    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+/* circular photo */
+.photo{
+  width:110px;
+  height:110px;
+  border-radius:50%;
+  background:var(--accent);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  box-shadow:0 8px 18px rgba(0,0,0,0.12);
+  flex-shrink:0;
+}
+.photo img{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* name and role */
+.name{
+  margin:0;
+  font-family: Georgia, "Times New Roman", serif;
+  color:var(--heading);
+  font-size:34px;
+}
+.role{
+  margin:6px 0 0;
+  font-weight:700;
+  color:var(--heading);
+}
+
+/* sections */
+section{ margin-bottom:18px; }
+h2{
+  margin:0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  color:var(--heading);
+  font-size:20px;
+}
+p, li{ color:var(--muted); font-size:15px; line-height:1.55; margin:0; }
+ul{ padding-left:18px; margin:0; }
+
+/* two-column on wide screens (simple) */
+@media(min-width:760px){
+  .content{ display:flex; gap:28px; align-items:flex-start; }
+  .main{ flex:1; }
+  .side{ width:280px; }
+}
+
+/* small screens */
+@media(max-width:559px){
+  .name{ font-size:28px; }
+  .photo{ width:92px; height:92px; }
+  .container{ margin:16px; padding:16px; }
 }
