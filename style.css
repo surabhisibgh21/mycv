@@ -80,10 +80,11 @@ body {
 
 /* Content */
 .content {
-  background: white;
+  background: linear-gradient(180deg, #ffffff, #eef7ff);
   padding: 28px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  border-left: 6px solid #4aa3ff; /* blue accent line */
 }
 
 header {
@@ -127,3 +128,4 @@ section ul {
     grid-template-columns: 1fr;
   }
 }
+
